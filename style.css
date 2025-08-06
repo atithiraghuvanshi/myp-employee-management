@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('gate.avif') no-repeat center center fixed; /* Set gate image as background */
+    background-size: cover; /* Ensure the image covers the entire background */
+    color: #1e1e1e;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #181818; /* Richer dark mode background */
+    color: #e0e0e0; /* Softer text color for dark mode */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align horizontally */
+    justify-content: center; /* Center align vertically */
+    padding: 40px;
+    min-height: 100vh;
+    background: none; /* Remove the semi-transparent white background */
+    border-radius: 12px;
+    box-shadow: none; /* Remove the shadow effect */
+}
+
+.form-card {
+    background: rgba(255, 255, 255, 0.6); /* More transparent form card */
+    color: #1e1e1e;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.dark-mode .form-card {
+    background: rgba(0, 0, 0, 0.6); /* Transparent dark mode form card */
+    color: #ffffff;
+}
+
+input, select, textarea, button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.dark-mode input, .dark-mode select, .dark-mode textarea, .dark-mode button {
+    background-color: #2a2a2a; /* Darker background for inputs */
+    color: #ffffff; /* White text for inputs */
+    border: 1px solid #444; /* Subtle border for inputs */
+}
+
+button {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Style the toggle button to resemble a small icon */
+.mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px; /* Small icon size */
+    height: 40px; /* Small icon size */
+    background: #4a4a4a;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%; /* Circular shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 0; /* Hide any text */
+}
+
+.mode-toggle::before {
+    content: '\1F319'; /* Unicode for crescent moon icon */
+    font-size: 20px; /* Set icon size */
+    color: inherit; /* Inherit color from the button */
+}
+
+.mode-toggle:hover {
+    background-color: #5a5a5a;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.dark-mode .mode-toggle {
+    background: #d1d1d1;
+    color: #121212;
+}
+
+.logout-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Ensure text is visible in dark mode */
+.dark-mode .data-table th, .dark-mode .data-table td {
+    background-color: #1e1e1e; /* Darker table background */
+    color: #ffffff; /* White text for table */
+    border: 1px solid #444; /* Subtle border for table */
+}
+
+/* Add the logo to the top-left corner */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px; /* Adjust logo size */
+    height: auto;
+}
