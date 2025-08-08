@@ -45,6 +45,19 @@ myp/
 
 ---
 
+📸 Sample Screenshots
+
+🔷 Dashboard  
+![Dashboard](screenshots/dashboard.png)
+
+📝 Employee Registration Form  
+![Employee Form](screenshots/employee_form.png)
+
+🏖️ Leave Application Page  
+![Leave Application](screenshots/leave_application.png)
+
+---
+
 🧑‍💻 How to Run the Project
 
 1. Clone the Repository  
@@ -85,6 +98,7 @@ You can add validation, authentication improvements, and admin panels as enhance
 
 📄 License
 This project is open-source and free to use for educational and non-commercial purposes.
+
 
 
 
